@@ -12,14 +12,14 @@ pipeline {
                 git 'https://github.com/longlee10/spring-petclinic.git'
 
                 // Build the application
-                sh 'mvn clean package'
+                bat 'mvn clean package'
             }
         }
 
         // stage('Code Coverage') {
         //     steps {
         //         // Generate code coverage report using Jacoco
-        //         sh 'mvn clean test jacoco:report'
+        //         bat 'mvn clean test jacoco:report'
         //     }
         // }
     }
