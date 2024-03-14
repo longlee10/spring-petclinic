@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                // Clone the repository
+                // Clone the repository from GitHub
                 git 'https://github.com/longlee10/spring-petclinic.git'
 
                 // Build the application
