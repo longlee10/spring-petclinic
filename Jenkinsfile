@@ -16,11 +16,11 @@ pipeline {
             }
         }
 
-        stage('Code Coverage') {
-            steps {
-                // Generate code coverage report using Jacoco
-                sh 'mvn clean test jacoco:report'
-            }
-        }
+        // stage('Code Coverage') {
+        //     steps {
+        //         // Generate code coverage report using Jacoco
+        //         sh 'mvn clean test jacoco:report'
+        //     }
+        // }
     }
 }
